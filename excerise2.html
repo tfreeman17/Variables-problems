@@ -1,6 +1,5 @@
-<!-- Display also in Kelvin (with the previous program) -->
-
 <!-- The temperature T in degrees Celsius (°C) is equal to the temperature T in degrees Fahrenheit (°F) minus 32, times 5/9.
+The temperature T in degrees Celsius (°C) is equal to the temperature T in degrees Fahrenheit (°F) minus 32, times 5/9.
 Write a program which asks the user the temperature in celsius and displays it in Fahrenheit
 
  -->
@@ -10,10 +9,11 @@ Write a program which asks the user the temperature in celsius and displays it i
 	<title>excerise 2</title>
 </head>
 <body>
-Results in Kelvins:
 	<script>
-		var c = parseFloat(prompt("What is the temp in Celsius"));
+		var c = prompt("What is the temp in Celsius");
+		var f = ( c / (5/9) ) + 32;
 		var k = c + 273.15;
+		document.write(f);
 
 		document.write(k);
 	</script>

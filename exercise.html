@@ -1,0 +1,24 @@
+<!-- Body Mass Index (BMI) is a measure of healthy weight. -->
+<!-- It can be calculated by taking your weight in kilograms and dividing by the square of your height in meters. Write a program that prompts the user to enter a weight in pounds and a height in feet and inches and displays the user's BMI value. To convert the users weight in pounds to their weight in kilograms you will need to use the fact that there are 2.2 pounds in one kilogram. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 1</title>
+</head>
+<body>
+	<script>
+		var f = prompt("How many feet tall are you? (inches will be next)");
+		var inches = prompt("Remaining inches?");
+		var k = f * .3048;
+		var m = inches * .0254;
+		var h = m + k;
+
+		var lbs = prompt("How much do lbs you weight")
+		var w = lbs / 2.2;
+		
+		var bmi = w / Math.pow(h, 2)
+	document.write(bmi)
+	</script>
+
+</body>
+</html>
